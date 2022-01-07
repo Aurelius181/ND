@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'Pizzeria.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(309, 405)
+        self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.lineEdit_Size = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit_Size.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.lineEdit_Size.setAutoFillBackground(True)
+        self.lineEdit_Size.setFrame(False)
+        self.lineEdit_Size.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.lineEdit_Size.setClearButtonEnabled(False)
+        self.lineEdit_Size.setObjectName("lineEdit_Size")
+        self.verticalLayout.addWidget(self.lineEdit_Size)
+        self.splitter = QtWidgets.QSplitter(Dialog)
+        self.splitter.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter.setObjectName("splitter")
+        self.radioButton_small = QtWidgets.QRadioButton(self.splitter)
+        self.radioButton_small.setObjectName("radioButton_small")
+        self.radioButton_medium = QtWidgets.QRadioButton(self.splitter)
+        self.radioButton_medium.setChecked(True)
+        self.radioButton_medium.setObjectName("radioButton_medium")
+        self.radioButton_large = QtWidgets.QRadioButton(self.splitter)
+        self.radioButton_large.setObjectName("radioButton_large")
+        self.verticalLayout.addWidget(self.splitter)
+        self.lineEdit_Topping = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit_Topping.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.lineEdit_Topping.setAutoFillBackground(True)
+        self.lineEdit_Topping.setFrame(False)
+        self.lineEdit_Topping.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.lineEdit_Topping.setClearButtonEnabled(False)
+        self.lineEdit_Topping.setObjectName("lineEdit_Topping")
+        self.verticalLayout.addWidget(self.lineEdit_Topping)
+        self.splitter_2 = QtWidgets.QSplitter(Dialog)
+        self.splitter_2.setOrientation(QtCore.Qt.Vertical)
+        self.splitter_2.setObjectName("splitter_2")
+        self.checkBox_Pepperoni = QtWidgets.QCheckBox(self.splitter_2)
+        self.checkBox_Pepperoni.setObjectName("checkBox_Pepperoni")
+        self.checkBox_Chicken = QtWidgets.QCheckBox(self.splitter_2)
+        self.checkBox_Chicken.setObjectName("checkBox_Chicken")
+        self.checkBox_Beef = QtWidgets.QCheckBox(self.splitter_2)
+        self.checkBox_Beef.setObjectName("checkBox_Beef")
+        self.checkBox_Green_Pepper = QtWidgets.QCheckBox(self.splitter_2)
+        self.checkBox_Green_Pepper.setObjectName("checkBox_Green_Pepper")
+        self.checkBox_Mushroom = QtWidgets.QCheckBox(self.splitter_2)
+        self.checkBox_Mushroom.setObjectName("checkBox_Mushroom")
+        self.checkBox_Spinach = QtWidgets.QCheckBox(self.splitter_2)
+        self.checkBox_Spinach.setObjectName("checkBox_Spinach")
+        self.checkBox_Tomato = QtWidgets.QCheckBox(self.splitter_2)
+        self.checkBox_Tomato.setObjectName("checkBox_Tomato")
+        self.verticalLayout.addWidget(self.splitter_2)
+        self.gridLayout = QtWidgets.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.pushButton_Order = QtWidgets.QPushButton(Dialog)
+        self.pushButton_Order.setObjectName("pushButton_Order")
+        self.gridLayout.addWidget(self.pushButton_Order, 0, 0, 1, 1)
+        self.pushButton_Exit = QtWidgets.QPushButton(Dialog)
+        self.pushButton_Exit.setObjectName("pushButton_Exit")
+        self.gridLayout.addWidget(self.pushButton_Exit, 0, 1, 1, 1)
+        self.verticalLayout.addLayout(self.gridLayout)
+        self.lcdNumber_Total = QtWidgets.QLCDNumber(Dialog)
+        self.lcdNumber_Total.setObjectName("lcdNumber_Total")
+        self.verticalLayout.addWidget(self.lcdNumber_Total)
+        self.plainTextEdit_Order_Text = QtWidgets.QPlainTextEdit(Dialog)
+        self.plainTextEdit_Order_Text.setObjectName("plainTextEdit_Order_Text")
+        self.verticalLayout.addWidget(self.plainTextEdit_Order_Text)
+        self.lineEdit_Total = QtWidgets.QLineEdit(Dialog)
+        self.lineEdit_Total.setObjectName("lineEdit_Total")
+        self.verticalLayout.addWidget(self.lineEdit_Total)
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Nathan\'s Pizzeria"))
+        self.lineEdit_Size.setText(_translate("Dialog", "Choose the size of your pizza:"))
+        self.radioButton_small.setText(_translate("Dialog", "Small"))
+        self.radioButton_medium.setText(_translate("Dialog", "Medium"))
+        self.radioButton_large.setText(_translate("Dialog", "Large"))
+        self.lineEdit_Topping.setText(_translate("Dialog", "Choose your favorite toppings:"))
+        self.checkBox_Pepperoni.setText(_translate("Dialog", "Pepperoni"))
+        self.checkBox_Chicken.setText(_translate("Dialog", "Chicken"))
+        self.checkBox_Beef.setText(_translate("Dialog", "Beef"))
+        self.checkBox_Green_Pepper.setText(_translate("Dialog", "Green Pepper"))
+        self.checkBox_Mushroom.setText(_translate("Dialog", "Mushroom"))
+        self.checkBox_Spinach.setText(_translate("Dialog", "Spinach"))
+        self.checkBox_Tomato.setText(_translate("Dialog", "Tomato"))
+        self.pushButton_Order.setText(_translate("Dialog", "Order"))
+        self.pushButton_Exit.setText(_translate("Dialog", "Exit"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Dialog = QtWidgets.QDialog()
+    ui = Ui_Dialog()
+    ui.setupUi(Dialog)
+    Dialog.show()
+    sys.exit(app.exec_())
+
